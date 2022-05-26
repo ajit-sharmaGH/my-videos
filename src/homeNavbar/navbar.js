@@ -1,7 +1,8 @@
 import './navbar.css';
 import {useThemeContext} from '../context/themeContext'
+import {useSidebarContext} from '../context/sidebarContext'
 const Navbar=()=> {
-   
+   const { sidebarToggle} = useSidebarContext();
     const { theme, toggleTheme } = useThemeContext();
     return(
 <header className="header-body flex-wrap">
@@ -20,7 +21,7 @@ const Navbar=()=> {
     </span>
   )}{" "}
 </div>{" "}
-<div className="ham-burger cursor">
+<div className="ham-burger cursor" onClick={sidebarToggle}>
   <i className="fa-solid fa-bars"> </i>{" "}
 </div>{" "}
 </header>

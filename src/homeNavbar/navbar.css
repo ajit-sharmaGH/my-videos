@@ -1,0 +1,25 @@
+.header-body {
+    background-color: var(--nav-color);
+    color: var(--white);
+    display: flex;
+    padding: 10px;
+    border-bottom: 0.1px solid var(--secondary-bg-color);
+}
+
+.header_logo {
+    margin-right: auto;
+    font-size: 2rem;
+}
+
+.header_logo>p {
+    font-weight: 800;
+    width: 100%;
+    border-top: 5px solid var(--red);
+    border-left: 3px solid var(--yellow);
+}
+
+.dark_light-icon,
+.ham-burger {
+    font-size: 1.5rem;
+    margin-left: 10px;
+}

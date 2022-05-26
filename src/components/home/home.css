@@ -1,0 +1,120 @@
+.home_container {
+    min-height: 100vh;
+}
+
+.home_description {
+    max-width: 40rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+}
+
+.home_btn {
+    border: 1px solid var(--blueviolet);
+    font-size: 1.5rem;
+}
+
+.front_page {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.home_img {
+    border-radius: 1rem;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+    margin-top: 2rem;
+}
+
+.img_container {
+    position: relative;
+}
+
+.img_btn {
+    position: absolute;
+    top: 2rem;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    background-color: var(--transparent-black);
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    color: var(--white);
+    font-size: 2.5rem;
+    transition: 0.3s;
+}
+
+.img_btn:hover {
+    opacity: 1;
+}
+
+.must_watch-img {
+    border-radius: 10px;
+    height: 25rem;
+    width: 100%;
+    background-size: 100% 100%;
+    background-color: var(--transparent-black);
+    box-shadow: 1px 1px 2px 1px var(--dark-primary-text);
+    cursor: pointer;
+}
+
+@media screen and (min-width:400px) {
+    .must_watch-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+        grid-template-rows: 1fr;
+        margin-top: 2rem;
+        grid-gap: 1rem;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .home_description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:300px) {
+    .must_watch-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(auto, 1fr));
+        grid-template-rows: 1fr;
+        margin-top: 2rem;
+        grid-gap: 1rem;
+    }
+    .img_btn {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width:300px) and (max-width:700px) {
+    .must_watch-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+        grid-template-rows: 1fr;
+        margin-top: 1rem;
+        grid-gap: 1rem;
+    }
+}
+
+@media screen and (min-width:1500px) {
+    .must_watch-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin-top: 2rem;
+        grid-gap: 5%;
+    }
+    .must_watch-img {
+        border-radius: 10px;
+        height: 60vh;
+        background-size: 100% 100%;
+    }
+}

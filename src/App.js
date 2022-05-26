@@ -1,5 +1,9 @@
+
+import {HomePage} from './pages/homePage';
 function App() {
-  return (<div>this is working fine </div>);
+  return (<div>
+    <HomePage />
+     </div>);
 }
 
 export default App;

@@ -2,10 +2,10 @@ import { createContext, useContext, useState } from "react";
 const SidebarContext = createContext();
 
 const SidebarProvider = ({ children }) => {
-  const [sidebar, setSidebar] = useState("block");
+  const [sidebar, setSidebar] = useState("none");
 
   const sidebarToggle = () => {
-    setSidebar((sidebar) => (sidebar === "block" ? "none" : "block"));
+    setSidebar((sidebar) => (sidebar === "none" ? "block" : "none"));
   };
 
   return (

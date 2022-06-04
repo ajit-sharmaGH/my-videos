@@ -4,7 +4,7 @@ import { Sidebar } from "../sidebar/sidebar";
 const HomeComponent = () => {
   return (
     <div className="padding-1 bg-theme-changer home_container">
-     
+      
         <Sidebar />
         <div className="front_page">
           <h3 className="home_description">

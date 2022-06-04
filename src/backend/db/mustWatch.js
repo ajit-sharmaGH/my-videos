@@ -6,7 +6,8 @@ export const MustWatch = [{
         img: "https://i.ibb.co/D4Nd6YW/BAHUBALI-1.jpg",
         title: "Bahubali The begining",
         description: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.",
-        creator: "Soham Shah"
+        creator: " ",
+
     },
     {
         _id: 2,
@@ -17,7 +18,7 @@ export const MustWatch = [{
 
         title: "KGF Chapter One",
         description: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.",
-        creator: "Soham Shah"
+        creator: " "
     },
     {
         _id: 3,
@@ -28,7 +29,7 @@ export const MustWatch = [{
 
         title: "Become a Web Developer",
         description: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.",
-        creator: "Soham Shah"
+        creator: " "
     },
     {
         _id: 4,
@@ -39,6 +40,6 @@ export const MustWatch = [{
 
         title: "Bug Hunter",
         description: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.",
-        creator: "Soham Shah"
+        creator: " "
     }
 ]

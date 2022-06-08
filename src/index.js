@@ -5,13 +5,16 @@ import App from "./App";
 import { makeServer } from "./server";
 import { ThemeProvider } from "./context/themeContext";
 import { SidebarProvider } from "./context/sidebarContext";
+import { VideoContextProvider } from "./context/videosContext";
 // Call make Server
 makeServer();
 ReactDOM.render(
   <React.StrictMode>
     <ThemeProvider>
       <SidebarProvider>
-        <App />
+        <VideoContextProvider>
+          <App />
+        </VideoContextProvider>
       </SidebarProvider>
     </ThemeProvider>{" "}
   </React.StrictMode>,

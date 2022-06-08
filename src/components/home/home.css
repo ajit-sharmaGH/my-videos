@@ -12,8 +12,10 @@
 }
 
 .home_btn {
-    border: 1px solid var(--blueviolet);
+    border-radius: 5px;
+    padding: 3px;
     font-size: 1.5rem;
+    background-color: var(--secondary-bg-color);
 }
 
 .front_page {

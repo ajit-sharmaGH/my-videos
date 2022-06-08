@@ -1,75 +1,77 @@
+import {v4 as uuid} from "uuid";
+
 /**
  * Videos Database can be added here.
  * You can add videos of your wish with different attributes
  * */
 
 export const videos = [{
-        _id: 1,
+        _id: uuid(),
         date: "10 July 2015 (India)",
         views: "235k",
-        caption: "Bahubali:The Begining/Release date",
+        caption: "Bahubali:The Begining",
         img: "https://i.ibb.co/D4Nd6YW/BAHUBALI-1.jpg",
         title: "Bahubali The begining",
-        description: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.",
-        creator: " ",
+        description: "Bahubali - The Beginning 2015 Full Movie | PRABHAS RANA DAGGUBATI Tamanaah Bhatia Anushka Shetty",
+        creator: "Bahubali",
         videoUrl : "https://youtu.be/Nf35om7AP2o"
 
     },
     {
-        _id: 2,
+        _id: uuid(),
         date: "2008",
         views: "549k",
         caption: "Iron Man trailer #1",
         img: "https://i.ibb.co/FXVKQbb/Iron-man.jpg",
         title: "Iron Man",
-        description: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.",
-        creator: " ",
+        description: "Iron Man (2008) Trailer #1 | Movieclips Classic Trailers",
+        creator: "Ironman",
         videoUrl : "https://youtu.be/8ugaeA-nMTc"
 
     }, {
-        _id: 3,
+        _id: uuid(),
         date: "21 December 2018 (India)",
-        views: "",
-        caption: "KGF:Chapter One/Release date",
+        views: "20M",
+        caption: "KGF:Chapter One",
         img: "https://i.ibb.co/9nWdYbV/Yash.jpg",
         title: "KGF Chapter One",
-        description: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.",
-        creator: " ",
+        description: "KGF (4K Quality) Full Movie | Yash Blockbuster Movie | Srinidhi Shetty, Ananth Nag, Ramachandra Raju",
+        creator: "Team Kgf",
         videoUrl : "https://youtu.be/gKizDojsdvs"
 
     },
     {
-        _id: 4,
+        _id: uuid(),
         date: "",
-        views: "",
+        views: "5M",
         caption: "Iron Man trailer #2",
         img: "https://i.ibb.co/FXVKQbb/Iron-man.jpg" ,
         title: "Iron Man",
-        description: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.",
-        creator: " ",
+        description: "Iron Man 2 Trailer #2 (2010) - Marvel Movie HD",
+        creator: "Ironman",
         videoUrl : "https://youtu.be/wKtcmiifycU"
 
     },
     {
-        _id: 5,
+        _id: uuid(),
         date: "On Your Time",
-        views: "",
-        caption: "Web dev Interview (Hindi)",
+        views: "405k",
+        caption: "Web dev Interview",
         img: "https://i.ibb.co/PQBWcvY/Office-set-up.jpg",
         title: "Become a Web Developer",
-        description: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.",
-        creator: " ",
+        description: "Web Developer Interview Questions and Answers 2022 ✅",
+        creator: "tech",
         videoUrl : "https://youtu.be/cbtGu5LCLRo"
     },
     {
-        _id: 6,
-        date: "700 bugs by Ankit Singh",
-        views: "",
+        _id: uuid(),
+        date: "700 bugs by Ankit",
+        views: "500k",
         caption: "A Ethical Boy (India)",
         img: "https://i.ibb.co/CMGDVFh/Do-Something-Hacker.jpg",
         title: "Bug Hunter",
-        description: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.",
-        creator: " ",
+        description: "700 Bugs निकालने वाले इस Hacker की कहानी 👨‍💻🤑 | Ankit Singh | Josh Talks Hindi",
+        creator: "tech",
         videoUrl : "https://youtu.be/QX3iigjsqoA"
 
     }

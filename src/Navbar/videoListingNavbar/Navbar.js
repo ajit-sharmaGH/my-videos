@@ -5,14 +5,14 @@ const VideoListingNavbar = () => {
     const {sidebarToggle} = useSidebarContext();
     const {theme,toggleTheme} = useThemeContext();
   return (
-    <header className="video-listing_header-body">
+    <header className="video-listing_header-body bg-theme-changer">
       <div className="flex-wrap-center burger-logo-bhai-bhai">
         <span onClick={sidebarToggle}><i className="fa-solid fa-bars icons"></i></span>
         <h2 className="ml-2 mr-1 header-logo">My Videos</h2>
       </div>
       <div className="video-listing_input-box">
      <span> <i class="fa-solid fa-magnifying-glass search-icon"></i></span>
-              <input type="text" className="search-box" />{" "}
+              <input type="text" className="search-box" placeholder="search...." />{" "}
       </div>
       <div className="flex-wrap-center">
       <div>

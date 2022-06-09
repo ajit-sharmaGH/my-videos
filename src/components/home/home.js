@@ -1,8 +1,10 @@
 import "./home.css";
 import { Link } from "react-router-dom";
-import { MustWatch } from "../../backend/db/mustWatch";
 import { Sidebar } from "../../shared/sidebar/sidebar";
+import { useVideo } from "../../context/videosContext";
 const HomeComponent = () => {
+  const { videos } = useVideo();
+
   return (
     <div className="padding-1 bg-theme-changer home_container">
       <Sidebar />
@@ -30,13 +32,15 @@ const HomeComponent = () => {
 
       <h2 className="mt-3 fw-800">Must Watch</h2>
       <div className="must_watch-container">
-        {MustWatch.map(({ img, title, _id, date, caption }) => {
+        {videos.slice(0,4).map(({ img, title, _id, date, caption }) => {
           return (
             <div key={_id}>
+              <Link to={`/player/${_id}`}>
               <img src={img} alt="images" className="must_watch-img" />
+              </Link>
+              <h3 className="fw-600">{title}</h3>
               <p>{date} </p>
               <p>{caption} </p>
-              <h3 className="fw-600">{title}</h3>
             </div>
           );
         })}

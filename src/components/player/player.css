@@ -1,6 +1,5 @@
  .video-player-box {
      display: flex;
-     flex-wrap: wrap;
  }
  
  .react-player-frame {
@@ -35,7 +34,7 @@
      display: none;
  }
  
- @media screen and (max-width:1060px) {
+ @media screen and (max-width:992px) {
      .player-video-card-first {
          display: none;
      }

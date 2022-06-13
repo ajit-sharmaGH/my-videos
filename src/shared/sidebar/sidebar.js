@@ -11,7 +11,7 @@ import { AiFillLike, AiOutlineHistory } from "react-icons/ai";
 const Sidebar = () => {
   const { sidebar } = useSidebarContext();
   return (
-    <div className="" style={{ display: sidebar }}>
+    <div className="" style={{display:sidebar }}>
       <div className="flex-col sidebar-container bg-theme-changer">
         <Link to="/" className="bg-theme-changer link-color flex">
           <HiHome className="sidebar-icon" />

@@ -1,16 +1,11 @@
 import { HomeComponent } from "../components/home/home";
 
-import { Navbar } from "../homeNavbar/navbar";
+import { Navbar } from "../Navbar/home/navbar";
 const HomePage = () => {
   return (
     <div>
-      
-        <Navbar />
-  
-     
-       
-        <HomeComponent />
-    
+      <Navbar />
+      <HomeComponent />
     </div>
   );
 };

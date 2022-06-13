@@ -1,0 +1,17 @@
+.video-listing-container {
+    height: calc(100vh - 4.5rem);
+    overflow: auto;
+}
+
+.video-listing-component {
+    width: 100%;
+}
+
+@media screen and (max-width:650px) {
+    .video-listing-sidebar {
+        display: none !important;
+    }
+    .video-listing-container {
+        height: calc(100vh - 9rem);
+    }
+}

@@ -1,0 +1,50 @@
+ .video-player-box {
+     display: flex;
+ }
+ 
+ .react-player-frame {
+     flex: 1 1 50.33%;
+     min-height: 65vh;
+     padding: 5px;
+     width: 100%;
+ }
+ 
+ .about-videos {
+     padding: 10px;
+ }
+ 
+ .creator-subscriber {
+     border-top: 1px solid var(--dark-primary);
+     border-bottom: 1px solid var(--dark-primary);
+     margin: 10px;
+     padding: 5px;
+ }
+ 
+ .like-icon,
+ .watchLater-icon,
+ .playlist-icon {
+     margin-left: 2rem;
+ }
+ 
+ .subscribe-btn {
+     color: var(--red);
+ }
+ 
+ .player-video-card-second {
+     display: none;
+ }
+ 
+ @media screen and (max-width:992px) {
+     .player-video-card-first {
+         display: none;
+     }
+     .player-video-card-second {
+         display: block;
+     }
+ }
+ 
+ @media screen and (max-width:768px) {
+     .react-player-frame {
+         min-height: auto;
+     }
+ }

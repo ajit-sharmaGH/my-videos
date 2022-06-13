@@ -1,0 +1,21 @@
+.video-player-container {
+    height: calc(100vh - 4.5rem);
+    /* overflow: auto; */
+}
+
+.components_video-player {
+    width: 100%;
+}
+
+.components_video-player {
+    overflow: auto;
+}
+
+@media screen and (max-width:650px) {
+    .video-player-sidebar {
+        display: none !important;
+    }
+    .video-player-container {
+        height: calc(100vh - 9rem);
+    }
+}

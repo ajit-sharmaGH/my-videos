@@ -1,8 +1,6 @@
 import "./navbar.css";
 import { useThemeContext } from "../../context/themeContext";
-import { useSidebarContext } from "../../context/sidebarContext";
 const Navbar = () => {
-  const { sidebarToggle } = useSidebarContext();
   const { theme, toggleTheme } = useThemeContext();
   return (
     <header className="header-body flex-wrap">
@@ -10,19 +8,21 @@ const Navbar = () => {
         <p> My - Videos </p>{" "}
       </div>{" "}
       <div>
-        {theme === "moon-icon" ? (
-          <span onClick={toggleTheme} className="dark_light-icon cursor">
-            <i className="fa-solid fa-sun"> </i>{" "}
-          </span>
-        ) : (
+        {theme === "sun-icon" ? (
           <span onClick={toggleTheme} className="dark_light-icon cursor">
             <i className="fa-solid fa-moon"> </i>{" "}
           </span>
+        ) : (
+          <span onClick={toggleTheme} className="dark_light-icon cursor">
+            <i className="fa-solid fa-sun"> </i>{" "}
+          </span>
         )}{" "}
       </div>{" "}
-      <div className="ham-burger cursor" onClick={sidebarToggle}>
-        <i className="fa-solid fa-bars"> </i>{" "}
-      </div>{" "}
+      <img
+          src="https://i.ibb.co/9nWdYbV/Yash.jpg"
+          alt="profile-img"
+          className="video-listing_profile-img ml-1"
+        />{" "}
     </header>
   );
 };

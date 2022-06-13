@@ -5,18 +5,19 @@ const ThemeContext = createContext();
 const ThemeProvider = ({ children }) => {
   const [theme, setTheme] = useState();
   const toggleTheme = () =>
-    setTheme((theme) => (theme === "moon-icon" ? "sun-icon" : "moon-icon"));
+    setTheme((theme) => (theme === "sun-icon" ? "moon-icon" : "sun-icon"));
   useLayoutEffect(() => {
-    if (theme === "moon-icon") {
-      document.documentElement.classList.remove("light-theme");
-      document.documentElement.classList.add("dark-theme");
-    } else {
+    if (theme === "sun-icon") {
       document.documentElement.classList.remove("dark-theme");
       document.documentElement.classList.add("light-theme");
+    } else {
+      document.documentElement.classList.remove("light-theme");
+      document.documentElement.classList.add("dark-theme");
     }
   }, [theme]);
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
+      {" "}
       {children}{" "}
     </ThemeContext.Provider>
   );

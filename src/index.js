@@ -6,6 +6,7 @@ import { makeServer } from "./server";
 import { ThemeProvider } from "./context/themeContext";
 import { SidebarProvider } from "./context/sidebarContext";
 import { VideoContextProvider } from "./context/videosContext";
+import { LikeContextProvider } from "./context/likeContext";
 // Call make Server
 makeServer();
 ReactDOM.render(
@@ -13,7 +14,9 @@ ReactDOM.render(
     <ThemeProvider>
       <SidebarProvider>
         <VideoContextProvider>
-          <App />
+          <LikeContextProvider>
+            <App />
+          </LikeContextProvider>
         </VideoContextProvider>
       </SidebarProvider>
     </ThemeProvider>{" "}

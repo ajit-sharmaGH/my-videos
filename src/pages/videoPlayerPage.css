@@ -11,6 +11,16 @@
     overflow: auto;
 }
 
+.components_video-player::-webkit-scrollbar {
+    width: 10px;
+    background-color: var(--dark-tertiary);
+}
+
+.components_video-player::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: var(--dark);
+}
+
 @media screen and (max-width:650px) {
     .video-player-sidebar {
         display: none !important;

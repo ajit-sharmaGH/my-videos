@@ -8,6 +8,19 @@
     overflow-y: auto;
 }
 
+.video-listing-component::-webkit-scrollbar {
+    width: 10px;
+}
+
+.video-listing-component::-webkit-scrollbar-track {
+    background-color: var(--dark-tertiary);
+}
+
+.video-listing-component::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: var(--dark);
+}
+
 .chip-position {
     position: sticky;
     top: 0px;

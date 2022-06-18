@@ -1,13 +1,13 @@
 import "./home.css";
 import { Link } from "react-router-dom";
-import { Sidebar } from "../../shared/sidebar/sidebar";
+// import { Sidebar } from "../../shared/sidebar/sidebar";
 import { useVideo } from "../../context/videosContext";
 const HomeComponent = () => {
   const { videos } = useVideo();
 
   return (
     <div className="padding-1 bg-theme-changer home_container">
-      <Sidebar />
+      {/* <Sidebar /> */}
       <div className="front_page">
         <h3 className="home_description">
           {" "}

@@ -4,6 +4,7 @@
     display: flex;
     padding: 10px;
     border-bottom: 0.1px solid var(--secondary-bg-color);
+    height: 4.5rem;
 }
 
 .header_logo {

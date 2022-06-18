@@ -1,0 +1,17 @@
+.video-like-container {
+    height: calc(100vh - 4.5rem);
+}
+
+.video-like-component {
+    width: 100%;
+    overflow: auto;
+}
+
+@media screen and (max-width:650px) {
+    .video-like-sidebar {
+        display: none !important;
+    }
+    .video-like-container {
+        height: calc(100vh - 9rem);
+    }
+}

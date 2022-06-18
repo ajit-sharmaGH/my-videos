@@ -11,7 +11,7 @@ const VideoListingNavbar = () => {
         <h2 className="ml-2 mr-1 header-logo">My Videos</h2>
       </div>
       <div className="video-listing_input-box">
-     <span> <i class="fa-solid fa-magnifying-glass search-icon"></i></span>
+     <span> <i className="fa-solid fa-magnifying-glass search-icon"></i></span>
               <input type="text" className="search-box" placeholder="search...." />{" "}
       </div>
       <div className="flex-wrap-center">

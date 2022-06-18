@@ -1,17 +1,23 @@
 .video-listing-container {
-    height: calc(100vh - 4.5rem);
-    overflow: auto;
+    overflow-y: hidden;
 }
 
 .video-listing-component {
+    height: calc(100vh - 4.5rem);
     width: 100%;
+    overflow-y: auto;
+}
+
+.chip-position {
+    position: sticky;
+    top: 0px;
 }
 
 @media screen and (max-width:650px) {
     .video-listing-sidebar {
         display: none !important;
     }
-    .video-listing-container {
+    .video-listing-component {
         height: calc(100vh - 9rem);
     }
 }

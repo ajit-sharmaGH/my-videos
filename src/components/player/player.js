@@ -1,6 +1,7 @@
 import ReactPlayer from "react-player";
 import { AiFillLike } from "react-icons/ai";
 import { MdWatchLater, MdPlaylistAdd } from "react-icons/md";
+import { ChipComponent } from "../../shared/chips/chips";
 import "./player.css";
 import { useVideo } from "../../context/videosContext";
 import { useParams } from "react-router-dom";
@@ -77,10 +78,14 @@ const VideoPlayer = () => {
           </div>
         </div>
         <div className="player-video-card-first">
+        <div className="chip-position"> <ChipComponent /></div>
+
           <VideoCard />
         </div>
       </div>
       <div className="player-video-card-second">
+      <div className="chip-position"> <ChipComponent /></div>
+
         <VideoCard />
       </div>
     </>

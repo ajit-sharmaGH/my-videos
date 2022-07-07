@@ -1,12 +1,15 @@
 import ReactPlayer from "react-player";
 import { AiFillLike } from "react-icons/ai";
 import { MdWatchLater, MdPlaylistAdd } from "react-icons/md";
+import { ChipComponent } from "../../shared/chips/chips";
 import "./player.css";
 import { useVideo } from "../../context/videosContext";
 import { useParams } from "react-router-dom";
 import { VideoCard } from "../../shared/card/VideoCard.js";
 import { useLike } from "../../context/likeContext";
+import { useHistory } from "../../context/historyContext";
 const VideoPlayer = () => {
+  const {historyDispatch} = useHistory();
   const { videoId } = useParams();
   const { videos } = useVideo();
   const { likeDispatch, likeState } = useLike();
@@ -26,6 +29,12 @@ const VideoPlayer = () => {
             <ReactPlayer
               url={videoUrl} 
               className="react-player-frame"
+              onStart = {()=>{
+                historyDispatch({
+                  type: "ADD_TO_HISTORY",
+                  payload: videoDisplaying
+                })
+              }}
               controls
               
             />
@@ -37,6 +46,7 @@ const VideoPlayer = () => {
             <div className="flex-wrap">
               <AiFillLike
                 className="like-icon"
+               
                 size={25}
                 color={
                   likeState.liked.includes(videoDisplaying) ? "green" : "black"
@@ -68,10 +78,14 @@ const VideoPlayer = () => {
           </div>
         </div>
         <div className="player-video-card-first">
+        <div className="chip-position"> <ChipComponent /></div>
+
           <VideoCard />
         </div>
       </div>
       <div className="player-video-card-second">
+      <div className="chip-position"> <ChipComponent /></div>
+
         <VideoCard />
       </div>
     </>

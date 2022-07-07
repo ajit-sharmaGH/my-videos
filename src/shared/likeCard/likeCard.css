@@ -5,13 +5,13 @@
 .like-sub-container {
     position: relative;
     padding: 8px;
-    color: var(--home-bg-color);
 }
 
 .heart-icon {
     position: absolute;
-    top: 2.5rem;
-    left: 1rem;
+    top: 1.5rem;
+    left: 2rem;
+    font-size: 2rem;
 }
 
 .img-context-box {
@@ -19,18 +19,22 @@
     padding: 5px 0 0 0;
 }
 
-.img-context-box:hover {
-    background-color: var(--dark-secondary);
-    color: var(--secondary-bg-color);
-    border-radius: 4px;
-    transition: 200ms;
-}
-
 .like-video-images {
     height: 12rem;
     min-width: 15rem;
     background-size: 100% 100%;
     border-radius: 4px;
+}
+
+.content-box:hover {
+    background-color: var(--dark-secondary);
+    border-radius: 4px;
+    transition: 200ms;
+    color: var(--secondary-bg-color);
+}
+
+.fa-xmark {
+    color: var(--red);
 }
 
 @media screen and (max-width:768px) {

@@ -1,16 +1,15 @@
-import { useLike } from "../../context/likeContext";
 import { useVideo } from "../../context/videosContext";
 import { Link } from "react-router-dom";
-import { AiFillHeart } from "react-icons/ai";
-import "./likeCard.css";
-const LikeCard = () => {
-  const { likeDispatch, likeState } = useLike();
+import "../likeCard/likeCard.css";
+import { useHistory } from "../../context/historyContext";
+const HistoryCard = () => {
+  const { historyDispatch, historyState } = useHistory();
   const { loader } = useVideo();
   return (
     <div className="like-container bg-theme-changer">
       {loader && <div className="flex-center"> Loading the videos </div>}
-      {likeState.liked.length !== 0 ? (
-        likeState.liked.map((video) => {
+      {historyState.history.length !== 0 ? (
+        historyState.history.map((video) => {
           const {
             _id,
             title,
@@ -22,8 +21,8 @@ const LikeCard = () => {
             description,
           } = video;
           return (
-            <div className="like-sub-container pt-1"  key = {_id}>
-              <Link  to ={`/player/${_id}`}  className="img-context-box">
+            <div className="like-sub-container pt-1" key={_id}>
+              <Link to={`/player/${_id}`} className="img-context-box">
                 <div className="ml-1 mr-1">
                   <img src={img} className="like-video-images" alt={title} />
                 </div>
@@ -39,20 +38,23 @@ const LikeCard = () => {
                   <span className="video-creator fw-600 mt-1">{creator}</span>
                 </div>
               </Link>
-              <AiFillHeart
-                className="icons heart-icon"
-                color="red"
+
+              <i
+                className="icons heart-icon fa-solid fa-xmark"
                 onClick={() => {
-                  likeDispatch({ type: "REMOVE_FROM_LIKE", payload: video });
+                  historyDispatch({
+                    type: "REMOVE_FROM_HISTORY",
+                    payload: video,
+                  });
                 }}
-              ></AiFillHeart>
+              ></i>
             </div>
           );
         })
       ) : (
-        <div className="flex-center pt-2 fw-800">Like some videos</div>
+        <div className="flex-center pt-2 fw-800">History Empty</div>
       )}
     </div>
   );
 };
-export { LikeCard };
+export { HistoryCard };

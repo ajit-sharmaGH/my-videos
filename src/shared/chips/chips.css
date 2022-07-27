@@ -1,25 +1,29 @@
-.chips-container {
-    min-height: 2rem;
-    overflow-x: auto;
-    overflow-y: hidden;
-    padding: 10px;
-}
-
-.chips-container::-webkit-scrollbar {
-    height: 10px;
-}
-
-.chips-container::-webkit-scrollbar-thumb {
-    min-width: 5px;
-    height: 5px;
-    border-radius: 10px;
-    background-color: var(--dark);
-}
-
-.chips-container>span {
-    margin-right: 1rem;
-    padding: 5px 8px;
-    cursor: pointer;
-    border: 1px solid var(--blueviolet);
-    border-radius: 1rem;
-}
+    .chips-container {
+        overflow-x: auto;
+        overflow-y: hidden;
+        padding: 10px 4px;
+    }
+    
+    .chips-container::-webkit-scrollbar {
+        height: 10px;
+    }
+    
+    .chips-container::-webkit-scrollbar-thumb {
+        min-width: 5px;
+        height: 5px;
+        border-radius: 10px;
+        background-color: var(--dark);
+    }
+    
+    .category-chips {
+        margin: 0px 1rem;
+        padding: 5px 10px;
+        border: 1px solid var(--blueviolet);
+        border-radius: 8px;
+        font-weight: 600;
+    }
+    
+    .chip-default {
+        background-color: var(--sky-blue);
+        color: var(--dark-primary);
+    }

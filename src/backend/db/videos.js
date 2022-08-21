@@ -7,6 +7,7 @@ import {v4 as uuid} from "uuid";
 
 export const videos = [{
         _id: uuid(),
+        categoryName:"south",
         date: "10 July 2015 (India)",
         views: "235k",
         caption: "Bahubali:The Begining",
@@ -19,6 +20,7 @@ export const videos = [{
     },
     {
         _id: uuid(),
+        categoryName:"hollywood",
         date: "2008",
         views: "549k",
         caption: "Iron Man trailer #1",
@@ -30,6 +32,7 @@ export const videos = [{
 
     }, {
         _id: uuid(),
+        categoryName:"south",
         date: "21 December 2018 (India)",
         views: "20M",
         caption: "KGF:Chapter One",
@@ -42,6 +45,7 @@ export const videos = [{
     },
     {
         _id: uuid(),
+        categoryName:"hollywood",
         date: "",
         views: "5M",
         caption: "Iron Man trailer #2",
@@ -54,6 +58,8 @@ export const videos = [{
     },
     {
         _id: uuid(),
+        categoryName:"web_dev",
+
         date: "On Your Time",
         views: "405k",
         caption: "Web dev Interview",
@@ -65,6 +71,8 @@ export const videos = [{
     },
     {
         _id: uuid(),
+        categoryName:"web_dev",
+
         date: "700 bugs by Ankit",
         views: "500k",
         caption: "A Ethical Boy (India)",
@@ -77,6 +85,7 @@ export const videos = [{
     },
     {
         _id: uuid(),
+        categoryName:"south",
         date: "15 Apr 2022",
         views: "80M",
         caption: "Baahubali 2 Full Hindi Dubbed",

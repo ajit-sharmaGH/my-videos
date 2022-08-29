@@ -2,6 +2,7 @@ import "./Navbar.css";
 import { useSidebarContext } from "../../context/sidebarContext";
 import { useThemeContext } from "../../context/themeContext";
 import { useVideo } from "../../context/videosContext";
+import {Link} from "react-router-dom"
 const VideoListingNavbar = () => {
   const { sidebarToggle } = useSidebarContext();
   const { setSearchInput } = useVideo();
@@ -38,11 +39,11 @@ const VideoListingNavbar = () => {
             </span>
           )}{" "}
         </div>{" "}
-        <img
+       <Link to = "/login"> <img
           src="https://i.ibb.co/9nWdYbV/Yash.jpg"
           alt="profile-img"
           className="video-listing_profile-img ml-1"
-        />{" "}
+        /></Link>
       </div>
     </header>
   );

@@ -95,5 +95,18 @@ export const videos = [{
         creator: "Funtun",
         videoUrl : "https://youtu.be/xZdLa3-MsXk"
 
+    },
+    {
+        _id: uuid(),
+        categoryName:"web_dev",
+        date: "23 Apr 2012",
+        views: "100k",
+        caption: "Go to algo.io !",
+        img: "https://img.youtube.com/vi/eGE-tFalwpA/maxresdefault.jpg",
+        title: "Ads",
+        description: "Become an AlgoExpert today at algoexpert.io.",
+        creator: "AlgoExpert",
+        videoUrl : "https://youtu.be/eGE-tFalwpA"
+
     }
 ]

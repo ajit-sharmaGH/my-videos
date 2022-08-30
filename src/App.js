@@ -4,6 +4,8 @@ import {VideoListingPage} from "./pages/videoListingPage";
 import { VideoPlayerPage } from "./pages/videoPlayerPage";
 import { LikePage } from "./pages/likePage";
 import { HistoryPage } from "./pages/historyPage";
+import { LoginPage } from "./pages/loginPage";
+import { SignupPage } from "./pages/signupPage";
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
         <Route path="/player/:videoId" element = {<VideoPlayerPage />} />
         <Route path="/liked-videos" element = {<LikePage />} />
         <Route path="/history-videos" element = {<HistoryPage />} />
+        <Route path="/login" element = {<LoginPage />} />
+        <Route path="/signup" element = {<SignupPage />} />
       </Routes>{" "}
     </Router>
   );

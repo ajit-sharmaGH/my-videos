@@ -1,4 +1,5 @@
 import "./VideoCard.css";
+import { BsThreeDotsVertical } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import { useVideo } from "../../context/videosContext";
 const VideoCard = () => {
@@ -38,6 +39,9 @@ const VideoCard = () => {
                       </span>
                       <span className="video-date">{item.date} </span>
                     </div>
+                  </section>
+                  <section className="ml-auto">
+                  <BsThreeDotsVertical size={22} />
                   </section>
                 </div>
               </div>
@@ -79,6 +83,9 @@ const VideoCard = () => {
                         <span className="video-date">{item.date} </span>
                       </div>
                     </section>
+                    <section className="ml-auto"> 
+                    <BsThreeDotsVertical size={22} />
+                  </section>
                   </div>
                 </div>
               );

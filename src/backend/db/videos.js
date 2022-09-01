@@ -8,14 +8,14 @@ import {v4 as uuid} from "uuid";
 export const videos = [{
         _id: uuid(),
         categoryName:"south",
-        date: "10 July 2015 (India)",
+        date: "2022",
         views: "235k",
-        caption: "Bahubali:The Begining",
-        img: "https://i.ytimg.com/vi/Nf35om7AP2o/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBMcE819K0ud2OMwuKka-ir_Wiysw",
-        title: "Bahubali The begining",
-        description: "Bahubali - The Beginning 2015 Full Movie | PRABHAS RANA DAGGUBATI Tamanaah Bhatia Anushka Shetty",
-        creator: "Bahubali",
-        videoUrl : "https://youtu.be/Nf35om7AP2o"
+        caption: "Check",
+        img: "https://i.ytimg.com/vi/NpJ6lnbgi_s/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBMcE819K0ud2OMwuKka-ir_Wiysw",
+        title: "Check",
+        description: "Check Latest Hindi Dubbed Full Movie 2022 [4K Ultra HD] | Nithiin, Rakul Preet, PriyaVarrier",
+        creator: "Movies",
+        videoUrl : "https://youtu.be/NpJ6lnbgi_s"
 
     },
     {
@@ -108,5 +108,57 @@ export const videos = [{
         creator: "AlgoExpert",
         videoUrl : "https://youtu.be/eGE-tFalwpA"
 
-    }
+    },
+    {
+        _id: uuid(),
+        categoryName:"hollywood",
+        date: "23 Mar 2016",
+        views: "100k",
+        caption: "Protector",
+        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeD_tUZOIE2us6tsK063yUKUKvlEjpE-ErlImENGyMVw&s",
+        title: "Protector",
+        description: "The Protector- Hollywood Movie Hindi Dubbed | Hollywood Action Movies In Hindi Dubbed Full HD",
+        creator: "hollywood",
+        videoUrl : "https://youtu.be/vJTWJVLKK0o"
+
+    },
+    {
+        _id: uuid(),
+        categoryName:"south",
+        date: "2018",
+        views: "100M",
+        caption: "Don No. 1",
+        img: "https://i.ytimg.com/vi/3h2bvybBbD0/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCINbQvj2vsaP8cTSkGhR90oX2GzA",
+        title: "",
+        description: "Surya is a gangster who helps the underprivileged sections of society. His life takes a turn for the worse when a Pakistani criminal decides to join hands with him.",
+        creator: "south",
+        videoUrl : "https://youtu.be/3h2bvybBbD0"
+
+    },
+    {
+        _id: uuid(),
+        categoryName:"web_dev",
+        date: "2022",
+        views: "1B",
+        caption: "Interview",
+        img: "https://i.ytimg.com/vi/QiOZ5E9b04k/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCINbQvj2vsaP8cTSkGhR90oX2GzA",
+        title: "Interview",
+        description: "Today I decided to challenge myself to a bunch of full stack interview questions. Hopefully I can get them all right, but odds are I will probably miss at least a few. Try to play along to see how many you can get right.",
+        creator: "AlgoExpert",
+        videoUrl : "https://youtu.be/QiOZ5E9b04k"
+
+    },
+    {
+        _id: uuid(),
+        categoryName:"hollywood",
+        date: "2019",
+        views: "180k",
+        caption: "American Trackers",
+        img: "https://i.ytimg.com/vi/xwcGu3GfAKE/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCINbQvj2vsaP8cTSkGhR90oX2GzA",
+        title: "American Tracker",
+        description: "AMERICAN TRACKERS - Hollywood Movie Hindi Dubbed | Hollywood Movies In Hindi Dubbed Full Action HD",
+        creator: "hollywood",
+        videoUrl : "https://youtu.be/xwcGu3GfAKE"
+
+    },
 ]

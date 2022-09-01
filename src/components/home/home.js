@@ -9,9 +9,10 @@ const HomeComponent = () => {
       <div className="front_page">
         <h3 className="home_description">
           {" "}
-          Lorem ipsum dolor sit amet ipisicing elit.Obcaecati temporibus ducimus
-          facere aliquid earum natus quidem error harum exercitationem, quas
-          aliquam minima voluptas nemo sed.{" "}
+         My Videos is a free video sharing websites
+          that makes it easy to watch online video available in backend database. It includes different
+           features similar to youtube like video-listing, like videos, watch video in history, create playlist, watch-later videos
+            etc.
           <Link to="/video-listing-page" className="mt-1 home_btn fw-600">
             {" "}
             Explore

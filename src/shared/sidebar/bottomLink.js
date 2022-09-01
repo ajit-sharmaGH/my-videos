@@ -8,7 +8,7 @@ const BottomLink = () => {
       <Link to="/" className="link-color">
         <HiHome className="sidebar-icon" size={25} />{" "}
       </Link>
-      <Link to="/playlists" className="link-color">
+      <Link to="/video-listing-page" className="link-color">
         <BsCollectionPlayFill className="sidebar-icon" />
       </Link>{" "}
       <Link to="/watch-later" className="link-color">

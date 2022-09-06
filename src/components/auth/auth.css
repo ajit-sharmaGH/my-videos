@@ -17,7 +17,7 @@
     background-color: var(--dark);
 }
 
-form {
+center {
     min-width: 22rem;
     padding: 1rem;
 }
@@ -33,7 +33,7 @@ form {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-form>button {
+center>button {
     margin: 1.5rem 0;
 }
 
@@ -42,7 +42,7 @@ form>button {
         padding-top: 4rem;
         height: calc(100vh - 4.5rem);
     }
-    form {
+    center {
         border-radius: 5px;
         width: 30rem;
         padding: 1.5rem;

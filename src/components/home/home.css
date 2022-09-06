@@ -63,7 +63,6 @@
     width: 100%;
     background-size: 100% 100%;
     background-color: var(--transparent-black);
-    /* box-shadow: 1px 1px 2px 1px var(--dark-primary-text); */
     cursor: pointer;
 }
 

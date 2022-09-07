@@ -13,11 +13,8 @@ const HomeComponent = () => {
           that makes it easy to watch online video available in backend database. It includes different
            features similar to youtube like video-listing, like videos, watch video in history, create playlist, watch-later videos
             etc.
-          <Link to="/video-listing-page" className="mt-1 home_btn fw-600">
-            {" "}
-            Explore
-          </Link>
-        </h3>{" "}
+        
+        </h3>
         <Link to="/video-listing-page" className="img_container">
           <img
             className="home_img"

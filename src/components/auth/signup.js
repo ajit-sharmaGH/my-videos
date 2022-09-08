@@ -28,21 +28,21 @@ const Signup = () => {
           />
           <input
             type="text"
-            value={"ajitsharma@gmail.com"}
+            value={"frontenddeveloper@gmail.com"}
             placeholder="email@gmail.com"
             className="form-input"
             required
           />
           <input
             type="password"
-            value={"ajitSharma420"}
+            value={"ajitSharma108"}
             placeholder="password"
             className="form-input"
             required
           />
           <button onClick={() => setLogin((login) => !login)}>
             {" "}
-            {login ? "Signed Up" : "Sign In"}{" "}
+            {login ? "" : "Signed Up"}{" "}
           </button>
           <div>
             Already have an A/c ? {">>>"}{" "}

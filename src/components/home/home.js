@@ -8,9 +8,9 @@ const HomeComponent = () => {
     <div className="padding-1 bg-theme-changer home_container">
       <div className="front_page">
         <h3 className="home_description">
-          {" "}
-         My Videos is a free video sharing websites
-          that makes it easy to watch online video available in backend database. It includes different
+          <h2 className="fw-600">WelCome to My Videos</h2>
+         This is a free videos sharing website (hosted on netlify)
+          that makes it easy to watch online videos available in backend database. It includes different
            features similar to youtube like video-listing, like videos, watch video in history, create playlist, watch-later videos
             etc.
         

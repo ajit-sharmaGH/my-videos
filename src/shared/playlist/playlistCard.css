@@ -1,0 +1,8 @@
+.playlist-container {
+    min-height: calc(100vh - 4.5rem);
+}
+
+.playlist-sub-container {
+    position: relative;
+    padding: 8px;
+}

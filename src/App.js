@@ -8,6 +8,7 @@ import { LoginPage } from "./pages/loginPage";
 import { SignupPage } from "./pages/signupPage";
 import { RequireAuth } from "./apiCalls/authRequire/requiresAuth";
 import { WatchLaterPage } from "./pages/watchLaterPage";
+import { PlaylistPage } from "./pages/playlistPage";
 
 function App() {
   return (
@@ -37,6 +38,14 @@ function App() {
           element={
             <RequireAuth>
               <WatchLaterPage /> 
+            </RequireAuth>
+          }
+        />
+        <Route
+          path="/playlists"
+          element={
+            <RequireAuth>
+              <PlaylistPage /> 
             </RequireAuth>
           }
         />

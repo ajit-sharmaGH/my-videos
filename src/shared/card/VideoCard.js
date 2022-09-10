@@ -1,12 +1,13 @@
 import "./VideoCard.css";
-import { BsThreeDotsVertical } from "react-icons/bs";
+// import { BsThreeDotsVertical } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import { useVideo } from "../../context/videosContext";
 const VideoCard = () => {
   const { loader, state, searchInput } = useVideo();
   return (
     <div className="video-listing-card bg-theme-changer">
-      {loader && <div className="flex-center"> Loading the Videos </div>}
+      {loader && <h2 className="pl-2 pt-1"> Loading the Videos </h2>}
+
       {searchInput === "&nbsp; " ? (
         <b className="flex-center">
           Please type a valid name, Ekdm topibaaz ho kaa !
@@ -49,9 +50,7 @@ const VideoCard = () => {
                     </div>
                   </section>
                   <section className="ml-auto">
-                    <BsThreeDotsVertical
-                      size={25}
-                    />
+    
                   </section>
                 </div>
               </div>

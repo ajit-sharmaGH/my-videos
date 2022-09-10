@@ -13,11 +13,14 @@ import { VideoCard } from "../../shared/card/VideoCard.js";
 import { useLike } from "../../context/likeContext";
 import { useHistory } from "../../context/historyContext";
 import { useWatchLater } from "../../context/watchLaterContext";
+import { usePlaylist } from "../../context/playlistContext";
+import { PlaylistModal } from "../playlistModal/playlistModal";
 const VideoPlayer = () => {
   const { historyDispatch } = useHistory();
   const { videoId } = useParams();
   const { videos } = useVideo();
   const { likeDispatch, likeState } = useLike();
+  const {setOpenModal} = usePlaylist();
   const { watchDispatch, watchState } = useWatchLater();
   const getVideoInfo = (id, videos) => {
     const videoDetails = videos.find((video) => id === video._id);
@@ -54,6 +57,7 @@ const VideoPlayer = () => {
             
                <AiFillLike
                   size={25}
+                  className="cursor"
                   onClick={() => {
                     likeDispatch({
                       type: "REMOVE_FROM_LIKE",
@@ -64,6 +68,7 @@ const VideoPlayer = () => {
                 
               ) : (
                 <AiOutlineLike
+                className="cursor"
                   onClick={() => {
                     likeDispatch({
                       type: "ADD_TO_LIKE",
@@ -77,7 +82,7 @@ const VideoPlayer = () => {
             
               {watchState.watchLater.includes(videoDisplaying) ? (
                 <MdWatchLater
-                  className="watchLater-icon"
+                  className="watchLater-icon cursor"
                   size={25}
                   onClick={() => {
                     watchDispatch({
@@ -88,7 +93,7 @@ const VideoPlayer = () => {
                 />
               ) : (
                 <MdOutlineWatchLater
-                  className="watchLater-icon"
+                  className="watchLater-icon cursor"
                   size={25}
                   onClick={() => {
                     watchDispatch({
@@ -99,7 +104,9 @@ const VideoPlayer = () => {
                 />
               )}
 
-              <MdPlaylistAdd className="playlist-icon" size={30} />
+              <MdPlaylistAdd className="playlist-icon cursor" size={30} 
+              onClick={()=> setOpenModal(true)}
+              />
             </div>
           </section>
           <aside className="flex-wrap-center mt-1 creator-subscriber">
@@ -125,6 +132,7 @@ const VideoPlayer = () => {
         </div>
         <VideoCard />
       </div>
+      <PlaylistModal video={videoDisplaying} />
     </>
   );
 };

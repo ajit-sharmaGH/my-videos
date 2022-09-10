@@ -22,13 +22,13 @@ const Login = () => {
               <h2 className="flex-row-justify-center fw-800">Login Here</h2>
               <input
                 type="text"
-                value={"ajitsharma@gmail.com"}
+                value={"frontenddeveloper@gmail.com"}
                 placeholder="email@gmail.com"
                 className="form-input"
               />
               <input
                 type="password"
-                value={"ajitSharma420"}
+                value={"ajitSharma180"}
                 placeholder="password"
                 className="form-input"
               />
